@@ -24,15 +24,15 @@ class PostsIndex extends Component {
   render() {
     return (
       <div>
-        <div className="text-xs-right">
-          <Link to="/posts/new" className="btn btn-primary">
-            New Post
-          </Link>
-        </div>
         <h3>All Posts</h3>
         <ul className="list-group">
           {this.renderPosts()}
         </ul>
+        <div className="text-xs">
+          <Link to="/posts/new" className="btn btn-primary">
+            New Post
+          </Link>
+        </div>
       </div>
     );
   }
