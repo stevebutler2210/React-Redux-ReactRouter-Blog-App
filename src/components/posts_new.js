@@ -70,7 +70,7 @@ function validate(values) {
     if (!values[field]) {
       errors[field] = `Enter ${field}`;
     }
-  })
+  });
 
   return errors;
 }
